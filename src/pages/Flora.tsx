@@ -12,9 +12,9 @@ import {
 } from "@/components/ui/select";
 
 const floraImages = [
-  { url: "https://source.unsplash.com/photo-1465146344425-f00d5f5c8f07", alt: "Orange flowers" },
-  { url: "https://source.unsplash.com/photo-1509316975850-ff9c5deb0cd9", alt: "Pine trees" },
-  { url: "https://source.unsplash.com/photo-1518495973542-4542c06a5843", alt: "Sunlit trees" },
+  { url: "/flores/flor1.jpg", alt: "Flor1" },
+  { url: "/flores/flor2.webp", alt: "Flor2" },
+  { url: "/flores/flor3.avif", alt: "Flor3" },
 ];
 
 const sections = {
@@ -62,7 +62,7 @@ const Flora = () => {
 
       <AudioPlayer 
         audioTitle={`Guía de ${selectedType}`}
-        audioSrc="/demo-audio.mp3"
+        audioSrc="/flor.m4a"
       />
     </div>
   );

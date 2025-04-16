@@ -14,7 +14,7 @@ const Index = () => {
       <main className="container mx-auto px-4 pt-24">
         <div className="max-w-2xl mx-auto text-center">
           <img 
-            src="https://source.unsplash.com/photo-1533387520709-752d29a169c4" 
+            src="/fortaleny.jpg" 
             alt="Fortaleny Village" 
             className="w-full h-64 object-cover rounded-lg mb-8 animate-fade-in"
           />

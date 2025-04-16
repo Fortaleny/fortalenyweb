@@ -12,8 +12,9 @@ import {
 } from "@/components/ui/select";
 
 const faunaImages = [
-  { url: "https://source.unsplash.com/photo-1472396961693-142e6e269027", alt: "Deer" },
-  { url: "https://source.unsplash.com/photo-1466721591366-2d5fba72006d", alt: "Antelope and zebra" },
+  { url: "/fauna/fauna1.jpg", alt: "Fauna1" },
+  { url: "/fauna/fauna2.jpg", alt: "Fauna2" },
+  { url: "/fauna/fauna3.jpg", alt: "Fauna3" },
 ];
 
 const sections = {
@@ -61,7 +62,7 @@ const Fauna = () => {
 
       <AudioPlayer 
         audioTitle={`Guía de ${selectedType}`}
-        audioSrc="/demo-audio.mp3"
+        audioSrc="/fauna.m4a"
       />
     </div>
   );
