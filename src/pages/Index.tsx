@@ -56,7 +56,7 @@ const Index = () => {
           <ImageCarousel images={floraImages} />
           <div className="mt-8">
             <div className="flex items-center justify-between mb-6">
-              <h2 className="text-2xl font-semibold text-gray-900">{sections.flora.title}</h2>
+              <h2 className="text-2xl font-semibold text-gray-900 animate-fade-in">{sections.flora.title}</h2>
               <Select value={selectedFloraType} onValueChange={setSelectedFloraType}>
                 <SelectTrigger className="w-[180px]">
                   <SelectValue />
@@ -70,7 +70,7 @@ const Index = () => {
                 </SelectContent>
               </Select>
             </div>
-            <p className="text-gray-700 leading-relaxed">
+            <p key={selectedFloraType} className="text-gray-700 leading-relaxed animate-fade-in">
               {sections.flora.content[selectedFloraType]}
             </p>
           </div>
@@ -80,7 +80,7 @@ const Index = () => {
           <ImageCarousel images={faunaImages} />
           <div className="mt-8">
             <div className="flex items-center justify-between mb-6">
-              <h2 className="text-2xl font-semibold text-gray-900">{sections.fauna.title}</h2>
+              <h2 className="text-2xl font-semibold text-gray-900 animate-fade-in">{sections.fauna.title}</h2>
               <Select value={selectedFaunaType} onValueChange={setSelectedFaunaType}>
                 <SelectTrigger className="w-[180px]">
                   <SelectValue />
@@ -94,7 +94,7 @@ const Index = () => {
                 </SelectContent>
               </Select>
             </div>
-            <p className="text-gray-700 leading-relaxed">
+            <p key={selectedFaunaType} className="text-gray-700 leading-relaxed animate-fade-in">
               {sections.fauna.content[selectedFaunaType]}
             </p>
           </div>
@@ -103,7 +103,7 @@ const Index = () => {
 
       <AudioPlayer 
         audioTitle={`Guía de ${selectedFloraType || selectedFaunaType}`}
-        audioSrc="#"
+        audioSrc="/demo-audio.mp3"
       />
     </div>
   );
