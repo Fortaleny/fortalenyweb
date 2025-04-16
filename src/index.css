@@ -68,6 +68,60 @@
   }
 }
 
+/* Bird flying animations */
+@keyframes bird-fly-1 {
+  0% { transform: translate(0, 0) scale(1) rotate(0deg); }
+  100% { transform: translate(150px, -150px) scale(0.5) rotate(15deg); opacity: 0; }
+}
+
+@keyframes bird-fly-2 {
+  0% { transform: translate(0, 0) scale(1) rotate(0deg); }
+  100% { transform: translate(200px, -180px) scale(0.4) rotate(20deg); opacity: 0; }
+}
+
+@keyframes bird-fly-3 {
+  0% { transform: translate(0, 0) scale(1) rotate(0deg); }
+  100% { transform: translate(120px, -140px) scale(0.6) rotate(10deg); opacity: 0; }
+}
+
+@keyframes bird-fly-4 {
+  0% { transform: translate(0, 0) scale(1) rotate(0deg); }
+  100% { transform: translate(180px, -190px) scale(0.5) rotate(25deg); opacity: 0; }
+}
+
+@keyframes bird-fly-5 {
+  0% { transform: translate(0, 0) scale(1) rotate(0deg); }
+  100% { transform: translate(160px, -120px) scale(0.5) rotate(15deg); opacity: 0; }
+}
+
+/* Leaf wind animation */
+@keyframes leaf-wind {
+  0% { 
+    transform: translateX(0) rotate(var(--rotation, 0deg)); 
+    opacity: 0.7;
+  }
+  20% {
+    transform: translateX(20vw) translateY(5vh) rotate(calc(var(--rotation, 0deg) + 40deg));
+    opacity: 0.9;
+  }
+  40% {
+    transform: translateX(40vw) translateY(10vh) rotate(calc(var(--rotation, 0deg) + 80deg));
+    opacity: 0.8;
+  }
+  60% {
+    transform: translateX(60vw) translateY(5vh) rotate(calc(var(--rotation, 0deg) + 120deg));
+    opacity: 0.7;
+  }
+  80% {
+    transform: translateX(80vw) translateY(8vh) rotate(calc(var(--rotation, 0deg) + 160deg));
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(120vw) translateY(10vh) rotate(calc(var(--rotation, 0deg) + 200deg));
+    opacity: 0;
+  }
+}
+
 .animate-fade-in {
   animation: fadeIn 0.3s ease-out;
 }
@@ -75,3 +129,4 @@
 .animate-slide-up {
   animation: slideUp 0.4s ease-out;
 }
+

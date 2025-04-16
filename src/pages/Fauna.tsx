@@ -1,8 +1,9 @@
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "@/components/Header";
 import ImageCarousel from "@/components/ImageCarousel";
 import AudioPlayer from "@/components/AudioPlayer";
+import { Bird } from "lucide-react";
 import {
   Select,
   SelectContent,
@@ -28,10 +29,70 @@ const sections = {
 
 const Fauna = () => {
   const [selectedType, setSelectedType] = useState(sections.types[0]);
+  const [showBirds, setShowBirds] = useState(true);
+  
+  useEffect(() => {
+    // Hide birds after animation completes
+    const timer = setTimeout(() => {
+      setShowBirds(false);
+    }, 2000);
+    
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
-    <div className="min-h-screen bg-[#E9DDC8]/10">
+    <div className="min-h-screen bg-[#E9DDC8]/10 overflow-hidden relative">
       <Header />
+      
+      {showBirds && (
+        <div className="absolute w-full h-full pointer-events-none z-10">
+          <Bird 
+            className="absolute text-gray-800 animate-bird-1"
+            size={24}
+            style={{
+              top: '30%',
+              left: '10%',
+              animation: 'bird-fly-1 2s forwards'
+            }}
+          />
+          <Bird 
+            className="absolute text-gray-800 animate-bird-2" 
+            size={30}
+            style={{
+              top: '25%',
+              left: '40%',
+              animation: 'bird-fly-2 1.7s forwards'
+            }}
+          />
+          <Bird 
+            className="absolute text-gray-800 animate-bird-3" 
+            size={20}
+            style={{
+              top: '35%',
+              left: '70%',
+              animation: 'bird-fly-3 1.5s forwards'
+            }}
+          />
+          <Bird 
+            className="absolute text-gray-700 animate-bird-4" 
+            size={26}
+            style={{
+              top: '45%',
+              left: '20%',
+              animation: 'bird-fly-4 2.2s forwards'
+            }}
+          />
+          <Bird 
+            className="absolute text-gray-900 animate-bird-5" 
+            size={22}
+            style={{
+              top: '20%',
+              left: '60%',
+              animation: 'bird-fly-5 1.8s forwards'
+            }}
+          />
+        </div>
+      )}
       
       <main className="container mx-auto px-4 pt-24 pb-24">
         <section className="mb-16 scroll-mt-20">
