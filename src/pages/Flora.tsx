@@ -1,67 +1,142 @@
 
 import { useState } from "react";
 import Header from "@/components/Header";
-import ImageCarousel from "@/components/ImageCarousel";
 import AudioPlayer from "@/components/AudioPlayer";
 import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "@/components/ui/tabs";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardTitle,
+} from "@/components/ui/card";
 
-const floraImages = [
-  { url: "/flores/flor1.jpg", alt: "Flor1" },
-  { url: "/flores/flor2.webp", alt: "Flor2" },
-  { url: "/flores/flor3.avif", alt: "Flor3" },
-];
-
-const sections = {
-  title: "Flora de Fortaleny",
-  types: ["Árboles", "Flores", "Arbustos"],
-  content: {
-    "Árboles": "Los árboles más comunes en Fortaleny son los pinos y olivos...",
-    "Flores": "En primavera, nuestros campos se llenan de amapolas y margaritas...",
-    "Arbustos": "El romero y el tomillo son arbustos típicos de nuestra región...",
-  }
+const floraData = {
+  "Árboles": [
+    {
+      id: 1,
+      title: "Pino Mediterráneo",
+      description: "Árbol perenne característico de nuestra región, resistente a la sequía y con copa en forma de parasol.",
+      image: "/flores/flor1.jpg"
+    },
+    {
+      id: 2,
+      title: "Olivo Centenario",
+      description: "Símbolo de la agricultura tradicional valenciana, algunos ejemplares superan los 300 años de antigüedad.",
+      image: "/flores/flor2.webp"
+    },
+    {
+      id: 3,
+      title: "Algarrobo",
+      description: "Árbol de frutos dulces muy valorado históricamente, adaptado perfectamente al clima mediterráneo.",
+      image: "/flores/flor3.avif"
+    }
+  ],
+  "Flores": [
+    {
+      id: 1,
+      title: "Amapola Silvestre",
+      description: "Flores rojas que tiñen los campos en primavera, símbolo de la belleza natural efímera.",
+      image: "/flores/flor2.webp"
+    },
+    {
+      id: 2,
+      title: "Margarita Común",
+      description: "Flores blancas con centro amarillo que adornan prados y cunetas durante todo el año.",
+      image: "/flores/flor3.avif"
+    },
+    {
+      id: 3,
+      title: "Lavanda Silvestre",
+      description: "Aromática planta que perfuma el aire y atrae a las abejas con sus espigas violáceas.",
+      image: "/flores/flor1.jpg"
+    },
+    {
+      id: 4,
+      title: "Diente de León",
+      description: "Planta medicinal de flores amarillas que se transforma en esferas de semillas voladoras.",
+      image: "/flores/flor2.webp"
+    }
+  ],
+  "Arbustos": [
+    {
+      id: 1,
+      title: "Romero",
+      description: "Arbusto aromático perenne usado en la cocina tradicional y como planta medicinal.",
+      image: "/flores/flor3.avif"
+    },
+    {
+      id: 2,
+      title: "Tomillo",
+      description: "Pequeño arbusto de intenso aroma que cubre laderas y es esencial en la gastronomía local.",
+      image: "/flores/flor1.jpg"
+    },
+    {
+      id: 3,
+      title: "Jara Blanca",
+      description: "Arbusto de flores blancas que florece en primavera y resiste bien los veranos secos.",
+      image: "/flores/flor2.webp"
+    }
+  ]
 };
 
 const Flora = () => {
-  const [selectedType, setSelectedType] = useState(sections.types[0]);
-
   return (
     <div className="min-h-screen bg-[#E9DDC8]/10 overflow-hidden relative">
       <Header />
       
-      <main className="container mx-auto px-4 pt-16 pb-24">
-        <section className="mb-16 scroll-mt-20">
-          <ImageCarousel images={floraImages} />
-          <div className="mt-8">
-            <div className="flex items-center justify-between mb-6">
-              <h2 className="text-2xl font-semibold text-gray-900 animate-fade-in">{sections.title}</h2>
-              <Select value={selectedType} onValueChange={setSelectedType}>
-                <SelectTrigger className="w-[180px]">
-                  <SelectValue />
-                </SelectTrigger>
-                <SelectContent>
-                  {sections.types.map((type) => (
-                    <SelectItem key={type} value={type}>
-                      {type}
-                    </SelectItem>
+      <main className="container mx-auto px-4 pt-20 pb-24">
+        <div className="max-w-6xl mx-auto">
+          <h1 className="text-3xl font-semibold text-gray-900 mb-8 text-center animate-fade-in">
+            Flora de Fortaleny
+          </h1>
+          
+          <Tabs defaultValue="Árboles" className="w-full">
+            <TabsList className="grid w-full grid-cols-3 mb-8">
+              <TabsTrigger value="Árboles" className="text-sm">Árboles</TabsTrigger>
+              <TabsTrigger value="Flores" className="text-sm">Flores</TabsTrigger>
+              <TabsTrigger value="Arbustos" className="text-sm">Arbustos</TabsTrigger>
+            </TabsList>
+            
+            {Object.entries(floraData).map(([category, plants]) => (
+              <TabsContent key={category} value={category} className="animate-fade-in">
+                <div className="grid gap-4 md:gap-6">
+                  {plants.map((plant) => (
+                    <Card key={plant.id} className="transition-all duration-200 hover:shadow-md">
+                      <CardContent className="p-0">
+                        <div className="flex flex-col sm:flex-row">
+                          <div className="w-full sm:w-32 h-32 sm:h-24 flex-shrink-0 p-3 sm:p-4">
+                            <img
+                              src={plant.image}
+                              alt={plant.title}
+                              className="w-full h-full object-cover rounded-lg"
+                            />
+                          </div>
+                          <div className="flex-1 p-4 sm:p-6 sm:pl-2">
+                            <CardTitle className="text-lg mb-2 text-gray-900">
+                              {plant.title}
+                            </CardTitle>
+                            <CardDescription className="text-gray-700 leading-relaxed">
+                              {plant.description}
+                            </CardDescription>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
                   ))}
-                </SelectContent>
-              </Select>
-            </div>
-            <p key={selectedType} className="text-gray-700 leading-relaxed animate-fade-in">
-              {sections.content[selectedType]}
-            </p>
-          </div>
-        </section>
+                </div>
+              </TabsContent>
+            ))}
+          </Tabs>
+        </div>
       </main>
 
       <AudioPlayer 
-        audioTitle={`Guía de ${selectedType}`}
+        audioTitle="Guía de Flora"
         audioSrc="/flor.m4a"
       />
     </div>

@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header";
 import AudioPlayer from "@/components/AudioPlayer";
 import {
@@ -11,7 +10,6 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 
@@ -136,14 +134,14 @@ const Fauna = () => {
                     <Card key={animal.id} className="transition-all duration-200 hover:shadow-md">
                       <CardContent className="p-0">
                         <div className="flex flex-col sm:flex-row">
-                          <div className="w-full sm:w-32 h-32 sm:h-24 flex-shrink-0">
+                          <div className="w-full sm:w-32 h-32 sm:h-24 flex-shrink-0 p-3 sm:p-4">
                             <img
                               src={animal.image}
                               alt={animal.title}
-                              className="w-full h-full object-cover rounded-t-lg sm:rounded-l-lg sm:rounded-t-none"
+                              className="w-full h-full object-cover rounded-lg"
                             />
                           </div>
-                          <div className="flex-1 p-4 sm:p-6">
+                          <div className="flex-1 p-4 sm:p-6 sm:pl-2">
                             <CardTitle className="text-lg mb-2 text-gray-900">
                               {animal.title}
                             </CardTitle>
