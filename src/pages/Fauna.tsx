@@ -121,28 +121,28 @@ const Fauna = () => {
           </h1>
           
           <Tabs defaultValue="Aves" className="w-full">
-            <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-8 h-auto p-1 bg-gray-200/80">
+            <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-8 h-auto p-1 bg-green-100/80">
               <TabsTrigger 
                 value="Aves" 
-                className="text-sm py-2 px-3 data-[state=active]:bg-gray-800 data-[state=active]:text-white text-gray-600 rounded transition-all"
+                className="text-sm py-2 px-3 data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-700 rounded transition-all"
               >
                 Aves
               </TabsTrigger>
               <TabsTrigger 
                 value="Mamíferos" 
-                className="text-sm py-2 px-3 data-[state=active]:bg-gray-800 data-[state=active]:text-white text-gray-600 rounded transition-all"
+                className="text-sm py-2 px-3 data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-700 rounded transition-all"
               >
                 Mamíferos
               </TabsTrigger>
               <TabsTrigger 
                 value="Insectos" 
-                className="text-sm py-2 px-3 data-[state=active]:bg-gray-800 data-[state=active]:text-white text-gray-600 rounded transition-all"
+                className="text-sm py-2 px-3 data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-700 rounded transition-all"
               >
                 Insectos
               </TabsTrigger>
               <TabsTrigger 
                 value="Reptiles" 
-                className="text-sm py-2 px-3 data-[state=active]:bg-gray-800 data-[state=active]:text-white text-gray-600 rounded transition-all"
+                className="text-sm py-2 px-3 data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-700 rounded transition-all"
               >
                 Reptiles
               </TabsTrigger>
