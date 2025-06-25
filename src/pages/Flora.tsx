@@ -96,22 +96,22 @@ const Flora = () => {
           </h1>
           
           <Tabs defaultValue="Árboles" className="w-full">
-            <TabsList className="grid w-full grid-cols-3 mb-8 h-auto p-1 bg-green-100/80">
+            <TabsList className="grid w-full grid-cols-3 mb-8 h-auto p-1 bg-slate-100/80">
               <TabsTrigger 
                 value="Árboles" 
-                className="text-sm py-2 px-3 data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-700 rounded transition-all"
+                className="text-sm py-2 px-3 data-[state=active]:bg-slate-900 data-[state=active]:text-slate-50 text-slate-600 rounded transition-all hover:bg-slate-200"
               >
                 Árboles
               </TabsTrigger>
               <TabsTrigger 
                 value="Flores" 
-                className="text-sm py-2 px-3 data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-700 rounded transition-all"
+                className="text-sm py-2 px-3 data-[state=active]:bg-slate-900 data-[state=active]:text-slate-50 text-slate-600 rounded transition-all hover:bg-slate-200"
               >
                 Flores
               </TabsTrigger>
               <TabsTrigger 
                 value="Arbustos" 
-                className="text-sm py-2 px-3 data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-700 rounded transition-all"
+                className="text-sm py-2 px-3 data-[state=active]:bg-slate-900 data-[state=active]:text-slate-50 text-slate-600 rounded transition-all hover:bg-slate-200"
               >
                 Arbustos
               </TabsTrigger>
