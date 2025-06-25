@@ -1,3 +1,4 @@
+
 import Header from "@/components/Header";
 import AudioPlayer from "@/components/AudioPlayer";
 import {
@@ -120,16 +121,36 @@ const Fauna = () => {
           </h1>
           
           <Tabs defaultValue="Aves" className="w-full">
-            <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-8">
-              <TabsTrigger value="Aves" className="text-sm">Aves</TabsTrigger>
-              <TabsTrigger value="Mamíferos" className="text-sm">Mamíferos</TabsTrigger>
-              <TabsTrigger value="Insectos" className="text-sm">Insectos</TabsTrigger>
-              <TabsTrigger value="Reptiles" className="text-sm">Reptiles</TabsTrigger>
+            <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-8 h-auto p-1 bg-blue-100/80">
+              <TabsTrigger 
+                value="Aves" 
+                className="text-sm py-2 px-3 data-[state=active]:bg-blue-200 data-[state=active]:text-blue-900 text-blue-700 rounded transition-all"
+              >
+                Aves
+              </TabsTrigger>
+              <TabsTrigger 
+                value="Mamíferos" 
+                className="text-sm py-2 px-3 data-[state=active]:bg-blue-200 data-[state=active]:text-blue-900 text-blue-700 rounded transition-all"
+              >
+                Mamíferos
+              </TabsTrigger>
+              <TabsTrigger 
+                value="Insectos" 
+                className="text-sm py-2 px-3 data-[state=active]:bg-blue-200 data-[state=active]:text-blue-900 text-blue-700 rounded transition-all"
+              >
+                Insectos
+              </TabsTrigger>
+              <TabsTrigger 
+                value="Reptiles" 
+                className="text-sm py-2 px-3 data-[state=active]:bg-blue-200 data-[state=active]:text-blue-900 text-blue-700 rounded transition-all"
+              >
+                Reptiles
+              </TabsTrigger>
             </TabsList>
             
             {Object.entries(faunaData).map(([category, animals]) => (
               <TabsContent key={category} value={category} className="animate-fade-in">
-                <div className="grid gap-4 md:gap-6">
+                <div className="grid gap-4 md:gap-6 px-2 md:px-0">
                   {animals.map((animal) => (
                     <Card key={animal.id} className="transition-all duration-200 hover:shadow-md">
                       <CardContent className="p-0">

@@ -96,15 +96,30 @@ const Flora = () => {
           </h1>
           
           <Tabs defaultValue="Árboles" className="w-full">
-            <TabsList className="grid w-full grid-cols-3 mb-8">
-              <TabsTrigger value="Árboles" className="text-sm">Árboles</TabsTrigger>
-              <TabsTrigger value="Flores" className="text-sm">Flores</TabsTrigger>
-              <TabsTrigger value="Arbustos" className="text-sm">Arbustos</TabsTrigger>
+            <TabsList className="grid w-full grid-cols-3 mb-8 h-auto p-1 bg-blue-100/80">
+              <TabsTrigger 
+                value="Árboles" 
+                className="text-sm py-2 px-3 data-[state=active]:bg-blue-200 data-[state=active]:text-blue-900 text-blue-700 rounded transition-all"
+              >
+                Árboles
+              </TabsTrigger>
+              <TabsTrigger 
+                value="Flores" 
+                className="text-sm py-2 px-3 data-[state=active]:bg-blue-200 data-[state=active]:text-blue-900 text-blue-700 rounded transition-all"
+              >
+                Flores
+              </TabsTrigger>
+              <TabsTrigger 
+                value="Arbustos" 
+                className="text-sm py-2 px-3 data-[state=active]:bg-blue-200 data-[state=active]:text-blue-900 text-blue-700 rounded transition-all"
+              >
+                Arbustos
+              </TabsTrigger>
             </TabsList>
             
             {Object.entries(floraData).map(([category, plants]) => (
               <TabsContent key={category} value={category} className="animate-fade-in">
-                <div className="grid gap-4 md:gap-6">
+                <div className="grid gap-4 md:gap-6 px-2 md:px-0">
                   {plants.map((plant) => (
                     <Card key={plant.id} className="transition-all duration-200 hover:shadow-md">
                       <CardContent className="p-0">
