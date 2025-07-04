@@ -95,6 +95,15 @@ const Flora = () => {
             Flora de Fortaleny
           </h1>
           
+          <div className="mb-8 p-6 bg-white/80 rounded-lg shadow-sm animate-fade-in">
+            <p className="text-gray-700 leading-relaxed text-center max-w-4xl mx-auto">
+              Descubre la rica diversidad vegetal de Fortaleny, donde la naturaleza mediterránea se despliega en toda su magnificencia. 
+              Desde majestuosos árboles centenarios hasta delicadas flores silvestres, nuestro territorio alberga una extraordinaria 
+              variedad de especies que han sabido adaptarse al clima y suelo de la región. Cada planta cuenta una historia de 
+              resistencia y belleza, formando un ecosistema único que define el paisaje de nuestro querido pueblo.
+            </p>
+          </div>
+          
           <Tabs defaultValue="Árboles" className="w-full">
             <TabsList className="grid w-full grid-cols-3 mb-8 h-auto p-1 bg-green-100/80">
               <TabsTrigger 

@@ -120,6 +120,16 @@ const Fauna = () => {
             Fauna de Fortaleny
           </h1>
           
+          <div className="mb-8 p-6 bg-white/80 rounded-lg shadow-sm animate-fade-in">
+            <p className="text-gray-700 leading-relaxed text-center max-w-4xl mx-auto">
+              Explora la fascinante fauna que habita en los alrededores de Fortaleny, donde la vida animal se manifiesta en 
+              múltiples formas y colores. Desde las aves migratorias que nos visitan cada temporada hasta los pequeños mamíferos 
+              que habitan nuestros campos, cada especie desempeña un papel vital en el equilibrio natural. Descubre cómo estos 
+              animales han encontrado en nuestro entorno mediterráneo el hogar perfecto para prosperar y mantener vivas las 
+              tradiciones naturales de la región.
+            </p>
+          </div>
+          
           <Tabs defaultValue="Aves" className="w-full">
             <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-8 h-auto p-1 bg-green-100/80">
               <TabsTrigger 
