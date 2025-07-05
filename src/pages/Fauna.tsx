@@ -86,26 +86,6 @@ const faunaData = {
       description: "Su característico canto nocturno forma parte de la banda sonora rural.",
       image: "/fauna/fauna2.jpg"
     }
-  ],
-  "Reptiles": [
-    {
-      id: 1,
-      title: "Lagarto Común",
-      description: "Reptil inofensivo que toma el sol en muros y rocas durante el día.",
-      image: "/fauna/fauna3.jpg"
-    },
-    {
-      id: 2,
-      title: "Gecko Común",
-      description: "Pequeño reptil nocturno que habita en grietas de paredes antiguas.",
-      image: "/fauna/fauna1.jpg"
-    },
-    {
-      id: 3,
-      title: "Culebra de Escalera",
-      description: "Serpiente no venenosa que controla poblaciones de roedores.",
-      image: "/fauna/fauna2.jpg"
-    }
   ]
 };
 
@@ -131,7 +111,7 @@ const Fauna = () => {
           </div>
           
           <Tabs defaultValue="Aves" className="w-full">
-            <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-8 h-auto p-1 bg-green-100/80">
+            <TabsList className="grid w-full grid-cols-3 mb-8 h-auto p-1 bg-green-100/80">
               <TabsTrigger 
                 value="Aves" 
                 className="text-sm py-2 px-3 data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-700 rounded transition-all"
@@ -149,12 +129,6 @@ const Fauna = () => {
                 className="text-sm py-2 px-3 data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-700 rounded transition-all"
               >
                 Insectos
-              </TabsTrigger>
-              <TabsTrigger 
-                value="Reptiles" 
-                className="text-sm py-2 px-3 data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-700 rounded transition-all"
-              >
-                Reptiles
               </TabsTrigger>
             </TabsList>
             
