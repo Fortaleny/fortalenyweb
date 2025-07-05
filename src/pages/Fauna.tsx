@@ -15,7 +15,7 @@ import {
 } from "@/components/ui/card";
 
 const faunaData = {
-  "Aves": [
+  "OCELLS": [
     {
       id: 1,
       title: "Cigüeña Blanca",
@@ -41,7 +41,7 @@ const faunaData = {
       image: "/fauna/fauna1.jpg"
     }
   ],
-  "Mamíferos": [
+  "AMBFIBIS I REPTILS": [
     {
       id: 1,
       title: "Conejo de Monte",
@@ -61,7 +61,7 @@ const faunaData = {
       image: "/fauna/fauna1.jpg"
     }
   ],
-  "Insectos": [
+  "TORTUGUES I PEIXOS": [
     {
       id: 1,
       title: "Mariposa Monarca",
@@ -110,26 +110,26 @@ const Fauna = () => {
             </p>
           </div>
           
-          <Tabs defaultValue="Aves" className="w-full">
-            <div className="mx-4 md:mx-8">
+          <Tabs defaultValue="OCELLS" className="w-full">
+            <div className="mx-2 sm:mx-4 md:mx-8">
               <TabsList className="grid w-full grid-cols-3 mb-8 h-auto p-1 bg-green-100/80">
                 <TabsTrigger 
-                  value="Aves" 
-                  className="text-xs sm:text-sm py-2 px-2 sm:px-3 data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-700 rounded transition-all whitespace-nowrap overflow-hidden text-ellipsis min-h-[2.5rem] flex items-center justify-center"
+                  value="OCELLS" 
+                  className="text-[10px] xs:text-xs sm:text-sm py-2 px-1 xs:px-2 sm:px-3 data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-700 rounded transition-all whitespace-nowrap overflow-hidden text-ellipsis min-h-[2.5rem] flex items-center justify-center leading-tight"
                 >
-                  Aves
+                  OCELLS
                 </TabsTrigger>
                 <TabsTrigger 
-                  value="Mamíferos" 
-                  className="text-xs sm:text-sm py-2 px-2 sm:px-3 data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-700 rounded transition-all whitespace-nowrap overflow-hidden text-ellipsis min-h-[2.5rem] flex items-center justify-center"
+                  value="AMBFIBIS I REPTILS" 
+                  className="text-[9px] xs:text-[10px] sm:text-sm py-2 px-1 xs:px-2 sm:px-3 data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-700 rounded transition-all whitespace-nowrap overflow-hidden text-ellipsis min-h-[2.5rem] flex items-center justify-center leading-tight"
                 >
-                  Mamíferos
+                  AMBFIBIS I REPTILS
                 </TabsTrigger>
                 <TabsTrigger 
-                  value="Insectos" 
-                  className="text-xs sm:text-sm py-2 px-2 sm:px-3 data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-700 rounded transition-all whitespace-nowrap overflow-hidden text-ellipsis min-h-[2.5rem] flex items-center justify-center"
+                  value="TORTUGUES I PEIXOS" 
+                  className="text-[9px] xs:text-[10px] sm:text-sm py-2 px-1 xs:px-2 sm:px-3 data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-700 rounded transition-all whitespace-nowrap overflow-hidden text-ellipsis min-h-[2.5rem] flex items-center justify-center leading-tight"
                 >
-                  Insectos
+                  TORTUGUES I PEIXOS
                 </TabsTrigger>
               </TabsList>
             </div>
