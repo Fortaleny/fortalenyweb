@@ -116,13 +116,13 @@ const Fauna = () => {
               </TabsTrigger>
               <TabsTrigger 
                 value="AMBFIBIS I REPTILS" 
-                className="text-sm py-2 px-3 data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-700 rounded transition-all"
+                className="text-xs sm:text-sm py-2 px-2 sm:px-3 data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-700 rounded transition-all whitespace-nowrap overflow-hidden text-ellipsis min-h-[2.5rem] flex items-center justify-center"
               >
                 AMBFIBIS I RÈPTILS
               </TabsTrigger>
               <TabsTrigger 
                 value="TORTUGUES I PEIXOS" 
-                className="text-sm py-2 px-3 data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-700 rounded transition-all"
+                className="text-xs sm:text-sm py-2 px-2 sm:px-3 data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-700 rounded transition-all whitespace-nowrap overflow-hidden text-ellipsis min-h-[2.5rem] flex items-center justify-center"
               >
                 TORTUGUES I PEIXOS
               </TabsTrigger>
