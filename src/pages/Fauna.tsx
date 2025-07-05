@@ -107,26 +107,28 @@ const Fauna = () => {
           </div>
           
           <Tabs defaultValue="OCELLS" className="w-full">
-            <TabsList className="grid w-full grid-cols-3 mb-8 h-auto p-1 bg-green-100/80">
-              <TabsTrigger 
-                value="OCELLS" 
-                className="text-sm py-2 px-3 data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-700 rounded transition-all"
-              >
-                OCELLS
-              </TabsTrigger>
-              <TabsTrigger 
-                value="AMBFIBIS I REPTILS" 
-                className="text-xs sm:text-sm py-2 px-2 sm:px-3 data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-700 rounded transition-all whitespace-nowrap overflow-hidden text-ellipsis min-h-[2.5rem] flex items-center justify-center"
-              >
-                AMBFIBIS I RÈPTILS
-              </TabsTrigger>
-              <TabsTrigger 
-                value="TORTUGUES I PEIXOS" 
-                className="text-xs sm:text-sm py-2 px-2 sm:px-3 data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-700 rounded transition-all whitespace-nowrap overflow-hidden text-ellipsis min-h-[2.5rem] flex items-center justify-center"
-              >
-                TORTUGUES I PEIXOS
-              </TabsTrigger>
-            </TabsList>
+            <div className="mx-4 md:mx-8">
+              <TabsList className="grid w-full grid-cols-3 mb-8 h-auto p-1 bg-green-100/80">
+                <TabsTrigger 
+                  value="OCELLS" 
+                  className="text-xs sm:text-sm py-2 px-2 sm:px-3 data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-700 rounded transition-all whitespace-nowrap overflow-hidden text-ellipsis min-h-[2.5rem] flex items-center justify-center"
+                >
+                  OCELLS
+                </TabsTrigger>
+                <TabsTrigger 
+                  value="AMBFIBIS I REPTILS" 
+                  className="text-xs sm:text-sm py-2 px-2 sm:px-3 data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-700 rounded transition-all whitespace-nowrap overflow-hidden text-ellipsis min-h-[2.5rem] flex items-center justify-center"
+                >
+                  AMBFIBIS I RÈPTILS
+                </TabsTrigger>
+                <TabsTrigger 
+                  value="TORTUGUES I PEIXOS" 
+                  className="text-xs sm:text-sm py-2 px-2 sm:px-3 data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-700 rounded transition-all whitespace-nowrap overflow-hidden text-ellipsis min-h-[2.5rem] flex items-center justify-center"
+                >
+                  TORTUGUES I PEIXOS
+                </TabsTrigger>
+              </TabsList>
+            </div>
             
             {Object.entries(faunaData).map(([category, animals]) => (
               <TabsContent key={category} value={category} className="animate-fade-in">
