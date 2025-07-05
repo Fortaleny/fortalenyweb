@@ -15,74 +15,74 @@ import {
 } from "@/components/ui/card";
 
 const faunaData = {
-  "Aves": [
+  "OCELLS": [
     {
       id: 1,
-      title: "Cigüeña Blanca",
-      description: "Visitante habitual en primavera, anida en campanarios y torres altas del pueblo.",
+      title: "Fotja comuna (Fulica atra)",
+      description: "Aquest simpàtic ocell té la seva principal característica en el seu pic i “escudete” que presenten de color blanc, des de lluny semblen de color negrós però en realitat presenten tons grisencs. Li agraden les aigües tranquil·les i amb abundant vegetació, alimentant-se d'aquesta. Durant els mesos de maig a juny se'ls pot veure acompanyades per les seves meravelloses cries, de color marró i cara i coll blanquinosos.",
       image: "/fauna/fauna1.jpg"
     },
     {
       id: 2,
-      title: "Golondrina Común",
-      description: "Llega cada año desde África, construye nidos de barro bajo los aleros.",
+      title: "Polla d'aigua/polla d'aigua (Gallinula chloropus)",
+      description: "Inconfusible pel seu “escudete” vermell i escaig vermell i groc, de tonalitat verdosa-blavosa i potes grogues que es tornen vermelles en el tars. Té actituds molt similars a la gallina de terra, ja que caboteja molt, d'aquí el seu nom. S'alimenta, principalment, de vegetació i pot arribar a bussejar per a buscar menjar. Abunda en zona d'arrossars, per la qual cosa la veiem fàcilment en aquesta zona. La cria s'observa en els mesos de maig a juny, obtenint una tonalitat marró pàl·lida.",
       image: "/fauna/fauna2.jpg"
     },
     {
       id: 3,
-      title: "Gorrión Común",
-      description: "Residente permanente, muy sociable y adaptado a la vida urbana.",
+      title: "Collverd (Anas platyrhynchos)",
+      description: "Mascle inconfusible pel seu color verd brillant (el qual li dona el nom), collaret blanc i escaig groc, de major grandària que les femelles, les quals presenten un plomatge brunenc clapejat, ressaltant únicament el “espejuelo”, el qual presenta un color blau i violeta, igual que el mascle. La seva principal alimentació és la vegetació aquàtica, encara que no li importa ingerir insectes, cucs o petits peixos. Es pot veure el festeig de les parelles a partir del mes de febrer i sobre els mesos de maig a juny a les cries acompanyant a les mares, les quals poden nedar i bussejar a les poques hores de vida.",
       image: "/fauna/fauna3.jpg"
     },
     {
       id: 4,
-      title: "Mirlo Común",
-      description: "Su melodioso canto se escucha al amanecer desde los jardines del pueblo.",
+      title: "Oreneta comuna (Hirundo rustica) i Avió comú (Delichon urbicum)",
+      description: "Ens brinden amb la seva magnífica presència durant els mesos càlids i estivals, presentant els seus balls en vol sobre el riu a la recerca de menjar (insectes, principalment) i per a recollir fang amb el qual fabriquen els seus nius als balcons i façanes. L'oreneta sol volar a menor altura que l'avió comú i la seva principal diferència es troba en el plomatge i fisiologia: l'oreneta una mica més llarga, front i “barbejo” vermells i collaret negre són els seus principals característiques. L'avió caracteritzat pel seu plomatge blavós en la part dorsal i part ventral blanca, durant el vol inconfusible pel seu “obispillo” blanc.Una característica molt peculiar de totes dues espècies és que sempre que tornen habiten els mateixos nius que van construir amb anterioritat, per això és important no destruir les seves llars, els quals els porta massa temps i energia tornar-los a construir. ",
+      image: "/fauna/fauna1.jpg"
+    },
+    {
+      id: 5,
+      title: "Blauet (Alcedo atthis)",
+      description: "Quan vegis passar una fletxa blava, pràcticament imperceptible a l'ull humà, aquí està aquesta preciositat d'ocell, la cridarem “la fada del riu”. Presenta un viu colorit, amb cap i escaig grans i potes curtes. Li agraden les zones tranquil·les, sense pràcticament contaminació acústica, posant-se en branques de la vegetació de les ribes i excava nius en els talussos.Es capbussa en l'aigua per a pescar, sent la seva alimentació des de larves, insectes aquàtics, amfibis, capgrossos… Un regal quan et brinda amb la seva presència!",
       image: "/fauna/fauna1.jpg"
     }
   ],
-  "Mamíferos": [
+  "AMBFIBIS I REPTILS": [
     {
       id: 1,
-      title: "Conejo de Monte",
-      description: "Habita en los matorrales cercanos, muy activo durante el crepúsculo.",
+      title: "Gripau comú (Buf spinosus)",
+      description: "Gripau que li agraden les zones aquàtiques, de tamany considerablement gran, des de 120 a 180 cm de longitud, sent les femelles més grans que els mascles. Presenten un color marró, vermellós o ataronjat, extremitats curtes i robustes i iris vermellós, característica que permet no confondre-ho amb altres exemplars de la mateixa família. Presenten activitat nocturna excepte en època de zel que poden veure's durant el dia, no són difícils de veure per la seva grandària, però sí pel seu camuflatge. L'època reproductora és des de gener a març i la posada d'ous es fa en l'aigua,  apareixent els capgrossos després de 3-4 mesos després, formant agregacions en les ribes.",
       image: "/fauna/fauna2.jpg"
     },
     {
       id: 2,
-      title: "Zorro Común",
-      description: "Cazador nocturno que se aproxima al pueblo en busca de alimento.",
+      title: "Colobra viperina (Natrix maura)",
+      description: "Aquesta serp aconsegueix una grandària entre 50-70 cm, sent les femelles les que aconsegueixen major longitud, i de cap triangular. Cal aclarir que NO és verinosa, tenint la peculiaritat que quan se sent amenaçada és capaç de fer semblar el seu cap encara més triangular. De tonalitat brunenca amb taques laterals. És aquàtica, sent molt bona nedadora i bussejadora. S'alimenta, principalment, de peixos i amfibis, encara que també pot caçar insectes i invertebrats. Amb l'augment de la temperatura comença la seva època de reproducció i de cria.",
       image: "/fauna/fauna3.jpg"
-    },
-    {
-      id: 3,
-      title: "Murciélago Común",
-      description: "Controla la población de insectos volando al atardecer.",
-      image: "/fauna/fauna1.jpg"
     }
   ],
-  "Insectos": [
+  "TORTUGUES I PEIXOS": [
     {
       id: 1,
-      title: "Mariposa Monarca",
-      description: "Polinizadora esencial, vuela entre las flores silvestres de los campos.",
+      title: "Tortuga d'estany (Emys orbicularis)",
+      description: "Li agraden les zones d'aigua d'escàs corrent i amb vegetació, la qual forma part 	de la seva alimentació, però a més pot alimentar-se d'insectes, amfibis, peixos i carronya. Presenten una grandària petita, entre 20-30 cm, i una coloració de la closca negra coberta per dibuixos grocs, sent les femelles més clares i presentant els mascles major longitud de cua. Amb activitat diürna, principalment en les primeres hores del matí, poden observar-se reposant sobre troncs i objectes flotants, si se sent amenaçada es llança a l'aigua, dirigint-se al fons, on s'enterra fins que passi el perill. Es troba en situació crítica al llarg del mediterrani, a causa de la presència de l’espècie invasora: la Trachemys scripta.",
       image: "/fauna/fauna2.jpg"
     },
     {
       id: 2,
-      title: "Abeja Melífera",
-      description: "Fundamental para la polinización de cultivos y plantas ornamentales.",
+      title: "Abeja Tortuga de rierol (Mauremys leprosa)",
+      description: "Presentant un color marró en la seva closca, tornant-se verdós amb el pas del temps, rep aquest nom per les erosions que rep el mateix conforme els anys. En el coll es poden apreciar tres línies grogues. Poden aconseguir una longitud de 20cm, sent les femelles de major grandària. S'alimenten, principalment, de peixos, però, també, invertebrats, amfibis i mol·luscos.Durant els mesos de març a juliol s'aparien sota l'aigua i després d'uns mesos la 	femella fa la posada d'ous. Al cap d'unes setmanes les cries trenquen la closca. Finalment, durant els mesos més freds, hibernen en el fons de l'aigua.",
       image: "/fauna/fauna3.jpg"
     },
     {
       id: 3,
-      title: "Libélula Azul",
+      title: "XXXX",
       description: "Habita cerca de fuentes y acequias, cazadora eficaz de mosquitos.",
       image: "/fauna/fauna1.jpg"
     },
     {
       id: 4,
-      title: "Grillo de Campo",
+      title: "XXX",
       description: "Su característico canto nocturno forma parte de la banda sonora rural.",
       image: "/fauna/fauna2.jpg"
     }
@@ -102,33 +102,29 @@ const Fauna = () => {
           
           <div className="mb-8 p-6 bg-white/80 rounded-lg shadow-sm animate-fade-in">
             <p className="text-gray-700 leading-relaxed text-center max-w-4xl mx-auto">
-              Explora la fascinante fauna que habita en los alrededores de Fortaleny, donde la vida animal se manifiesta en 
-              múltiples formas y colores. Desde las aves migratorias que nos visitan cada temporada hasta los pequeños mamíferos 
-              que habitan nuestros campos, cada especie desempeña un papel vital en el equilibrio natural. Descubre cómo estos 
-              animales han encontrado en nuestro entorno mediterráneo el hogar perfecto para prosperar y mantener vivas las 
-              tradiciones naturales de la región.
+              La fauna que pot trobar-se en zona de ribera és molt diversa i al llarg del Riu Xúquer varia segons l'altitud en la qual ens trobem. Aquí parlarem d'aquelles espècies que veiem amb facilitat cap al final de la seva desembocadura, en concret en l'Assut de Fortaleny. Encara centrant-nos en aquesta única part del riu, continuen sent nombrosos els grups d'animals i espècies de cadascun d'ells que podem albirar. Aquí us deixem les espècies més característiques que trobem en aquesta zona, que per les seves aigües tranquil·les, climatologia, temperatura de l'aigua, tipus d'alimentació, presència anual i sinergia entre totes elles, són més destacables.
             </p>
           </div>
           
-          <Tabs defaultValue="Aves" className="w-full">
+          <Tabs defaultValue="OCELLS" className="w-full">
             <TabsList className="grid w-full grid-cols-3 mb-8 h-auto p-1 bg-green-100/80">
               <TabsTrigger 
-                value="Aves" 
+                value="OCELLS" 
                 className="text-sm py-2 px-3 data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-700 rounded transition-all"
               >
-                Aves
+                OCELLS
               </TabsTrigger>
               <TabsTrigger 
-                value="Mamíferos" 
+                value="AMBFIBIS I REPTILS" 
                 className="text-sm py-2 px-3 data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-700 rounded transition-all"
               >
-                Mamíferos
+                AMBFIBIS I RÈPTILS
               </TabsTrigger>
               <TabsTrigger 
-                value="Insectos" 
+                value="TORTUGUES I PEIXOS" 
                 className="text-sm py-2 px-3 data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-700 rounded transition-all"
               >
-                Insectos
+                TORTUGUES I PEIXOS
               </TabsTrigger>
             </TabsList>
             

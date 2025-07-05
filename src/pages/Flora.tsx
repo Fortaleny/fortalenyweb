@@ -10,70 +10,38 @@ import {
 } from "@/components/ui/card";
 
 const floraData = [
-  // Árboles
-  {
-    id: 1,
-    title: "Pino Mediterráneo",
-    description: "Árbol perenne característico de nuestra región, resistente a la sequía y con copa en forma de parasol.",
-    image: "/flores/flor1.jpg"
-  },
-  {
-    id: 2,
-    title: "Olivo Centenario",
-    description: "Símbolo de la agricultura tradicional valenciana, algunos ejemplares superan los 300 años de antigüedad.",
-    image: "/flores/flor2.webp"
-  },
-  {
-    id: 3,
-    title: "Algarrobo",
-    description: "Árbol de frutos dulces muy valorado históricamente, adaptado perfectamente al clima mediterráneo.",
-    image: "/flores/flor3.avif"
-  },
-  // Flores
-  {
-    id: 4,
-    title: "Amapola Silvestre",
-    description: "Flores rojas que tiñen los campos en primavera, símbolo de la belleza natural efímera.",
-    image: "/flores/flor2.webp"
-  },
-  {
-    id: 5,
-    title: "Margarita Común",
-    description: "Flores blancas con centro amarillo que adornan prados y cunetas durante todo el año.",
-    image: "/flores/flor3.avif"
-  },
-  {
-    id: 6,
-    title: "Lavanda Silvestre",
-    description: "Aromática planta que perfuma el aire y atrae a las abejas con sus espigas violáceas.",
-    image: "/flores/flor1.jpg"
-  },
-  {
-    id: 7,
-    title: "Diente de León",
-    description: "Planta medicinal de flores amarillas que se transforma en esferas de semillas voladoras.",
-    image: "/flores/flor2.webp"
-  },
-  // Arbustos
-  {
-    id: 8,
-    title: "Romero",
-    description: "Arbusto aromático perenne usado en la cocina tradicional y como planta medicinal.",
-    image: "/flores/flor3.avif"
-  },
-  {
-    id: 9,
-    title: "Tomillo",
-    description: "Pequeño arbusto de intenso aroma que cubre laderas y es esencial en la gastronomía local.",
-    image: "/flores/flor1.jpg"
-  },
-  {
-    id: 10,
-    title: "Jara Blanca",
-    description: "Arbusto de flores blancas que florece en primavera y resiste bien los veranos secos.",
-    image: "/flores/flor2.webp"
-  }
-];
+    {
+      id: 1,
+      title: "Canyís (Phgramites australis)",
+      description: "Característica per trobar-se en zones d'aigua és una espècie molt confusible amb la canya comuna (“Arundo donax”), per la seva gran semblança. No obstant això, presenta unes certes diferències per a distingir una de l'altra, com la presència de les seves fulles més llises i fines i que no presenta nusos. Pot aconseguir els 3 metres d'altura i les flors són plomalls sedosos de color vermellós, tornant-se més marrons després. Els Canyissars té un alt valor ecològic, ja que molts ocells els utilitzen de refugi i granja. Pots observar-los en la riba d'aquest propi arenal.",
+      image: "/flores/flor1.jpg"
+    },
+    {
+      id: 2,
+      title: "Lliri groc (Iris psudacorus)",
+      description: "Espècie autòctona molt utilitzada en restauració de riberes i marenys. Característica per agradar-li les zones molt humides i/o amb aigua, poden viure amb sol directe o zones de semiombra. Presenten un creixement ràpid i rizomes gruixuts. Presenten fulles llargues, podent aconseguir més d'un metre de longitud, i amples de color verd marró fosc. Després de la seva floració a la primavera (entre els mesos d'abril-juliol) es poden 	apreciar flors de gran grandària, nombroses i de color groc, aportant bellesa a la riba del riu junt les seves companyes, i presenta llavors brunenques. És una planta tòxica després de la seva ingestió.",
+      image: "/flores/flor2.webp"
+    },
+    {
+      id: 3,
+      title: "Salzes - Gerga i Mimbrera (Salix eleagnos i Salix purpurea)",
+      description: "En aquest arenal podem trobar tots dos tipus de salzes, tots dos autòctons i molt utilitzats per a restaurar llits i fixar talussos. A les dues espècies els agrada estar prop de l'aigua, però una mica allunyades de la riba. Totes dues espècies són molt semblants, les veurem  per separat per a poder identificar-les i conèixer-les una mica millor. Per a començar, totes dues espècies s'utilitzen per a obtenir vímet per al seu ús en cistelleria. Aconsegueixen una altura de 6m i les seves rametes presenten tonalitats grogues i vermelloses. La seva principal diferència està en les fulles: en la Gerga presenten un feix verd fosc i el revés amb pèl i blanquinós, les fulles de la mimbrera estan desproveïdes de pèls i són brillants. A més, la gerga les tenen alternes i la mimbrera oposades. Com a curiositat, que el Salix purpurea és precursor del conegut àcid salicílic, emprat per a elaborar l'aspirina. ",
+      image: "/flores/flor3.avif"
+    },
+    {
+      id: 4,
+      title: "Jonc rodó i Jonc comú (Juncus acutus i Scirpus holoschoenus)",
+      description: "Totes dues espècies són característiques en zona de ribera, aquí en l'arenal pots trobar les dues espècies junt a la riba del riu. El jonc rodó és el clàssic jonc d'albufera que forma grans mates denses amb les fulles i tiges punxants, aconseguint els 2 metres d'altura i presenta tiges verdes fosques, la final dels quals creixen les seves flors marrons vermelloses i fruits rosats. El seu ús tradicional és la cistelleria, pitjor també com a planta medicinal. Conegut com a Jonc per la seva gran semblança als mateix, pertany a una altra família de flora. Li agrada estar en zones pròximes de cursos d'aigua, per la qual cosa és fàcil trobar-ho pròxim als rius, al sol o zones de semiombra. com ocorre en l'Arenal de Fortaleny. Planta robusta que presenta tiges toves, gran diferència amb els joncs, i inflorescències esfèriques de color marró. Molt utilitzat en restauracions ambientals d'aiguamolls.",
+      image: "/flores/flor3.avif"
+    },
+    {
+      id: 5,
+      title: "Avellanillo o arraclán (Frangula alnus)",
+      description: "Arbust o petit arbre, amb abundants branques que pot aconseguir aproximadament els 10 metres, presenta una escorça vermellosa-grisa quan és jove, tornant-se negrosa amb el temps. Fulles amb forma ovalada, àpex agut i un verd intens pel feix i mat per el revés, són caduques i es troben alternes. Les flors apareixen solitàries, generalment i el seu fruit és una drupa de color vermellós, que es torna negra en madurar. Aquesta espècie es troba en els catàlegs d'espècies amenaçades i protegides de la Comunitat Valenciana.",
+      image: "/flores/flor3.avif"
+    }
+  ]
+;
 
 const Flora = () => {
   return (
@@ -88,10 +56,7 @@ const Flora = () => {
           
           <div className="mb-8 p-6 bg-white/80 rounded-lg shadow-sm animate-fade-in">
             <p className="text-gray-700 leading-relaxed text-center max-w-4xl mx-auto">
-              Descubre la rica diversidad vegetal de Fortaleny, donde la naturaleza mediterránea se despliega en toda su magnificencia. 
-              Desde majestuosos árboles centenarios hasta delicadas flores silvestres, nuestro territorio alberga una extraordinaria 
-              variedad de especies que han sabido adaptarse al clima y suelo de la región. Cada planta cuenta una historia de 
-              resistencia y belleza, formando un ecosistema único que define el paisaje de nuestro querido pueblo.
+              Observant al llarg de la riba del riu, durant el seu recorregut i a l'ample d'aquesta, es troben diverses famílies de flora que conformen la vegetació de ribera, ja siguen plantes autòctones com a invasores. Per a conèixer una mica més sobre ella, a continuació, es nomena les espècies autòctones més destacables que podem trobar al llarg de l'arenal. 
             </p>
           </div>
           
