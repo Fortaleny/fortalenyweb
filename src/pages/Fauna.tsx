@@ -102,11 +102,11 @@ const Fauna = () => {
           
           <div className="mb-8 p-6 bg-white/80 rounded-lg shadow-sm animate-fade-in">
             <p className="text-gray-700 leading-relaxed text-center max-w-4xl mx-auto">
-              Explora la fascinante fauna que habita en los alrededores de Fortaleny, donde la vida animal se manifiesta en 
-              múltiples formas y colores. Desde las aves migratorias que nos visitan cada temporada hasta los pequeños mamíferos 
-              que habitan nuestros campos, cada especie desempeña un papel vital en el equilibrio natural. Descubre cómo estos 
-              animales han encontrado en nuestro entorno mediterráneo el hogar perfecto para prosperar y mantener vivas las 
-              tradiciones naturales de la región.
+  Explora la fascinante fauna que habita en los alrededores de Fortaleny, donde la vida animal se manifiesta en 
+  múltiples formas y colores. Desde las aves migratorias que nos visitan cada temporada hasta los pequeños mamíferos 
+  que habitan nuestros campos, cada especie desempeña un papel vital en el equilibrio natural. Descubre cómo estos 
+  animales han encontrado en nuestro entorno mediterráneo el hogar perfecto para prosperar y mantener vivas las 
+  tradiciones naturales de la región.
             </p>
           </div>
           
@@ -114,19 +114,19 @@ const Fauna = () => {
             <TabsList className="grid w-full grid-cols-3 mb-8 h-auto p-1 bg-green-100/80">
               <TabsTrigger 
                 value="Aves" 
-                className="text-sm py-2 px-3 data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-700 rounded transition-all"
+                className="text-xs sm:text-sm py-2 px-2 sm:px-3 data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-700 rounded transition-all whitespace-nowrap overflow-hidden text-ellipsis min-h-[2.5rem] flex items-center justify-center"
               >
                 Aves
               </TabsTrigger>
               <TabsTrigger 
                 value="Mamíferos" 
-                className="text-sm py-2 px-3 data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-700 rounded transition-all"
+                className="text-xs sm:text-sm py-2 px-2 sm:px-3 data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-700 rounded transition-all whitespace-nowrap overflow-hidden text-ellipsis min-h-[2.5rem] flex items-center justify-center"
               >
                 Mamíferos
               </TabsTrigger>
               <TabsTrigger 
                 value="Insectos" 
-                className="text-sm py-2 px-3 data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-700 rounded transition-all"
+                className="text-xs sm:text-sm py-2 px-2 sm:px-3 data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-700 rounded transition-all whitespace-nowrap overflow-hidden text-ellipsis min-h-[2.5rem] flex items-center justify-center"
               >
                 Insectos
               </TabsTrigger>
