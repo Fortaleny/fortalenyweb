@@ -4,6 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
+  base: '/fortalenyweb/', // Replace with your GitHub repo name
   server: {
     host: "::",
     port: 8080,
@@ -17,6 +18,5 @@ export default defineConfig(({ mode }) => ({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
-  },
-  base: '/fortalenyweb/' // Replace with your GitHub repo name
+  }
 }));
