@@ -13,7 +13,6 @@ export default defineConfig(({ mode }) => ({
     react(),
     componentTagger(),
   ].filter(Boolean),
-  base:'/fortalenyweb/',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
