@@ -1,4 +1,3 @@
-
 import { Volume2, Pause, Play } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 import { Button } from "./ui/button";
@@ -48,7 +47,7 @@ const AudioPlayer = ({ audioTitle, audioSrc }: AudioPlayerProps) => {
   };
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-sm border-t p-4 flex items-center gap-4 z-50 animate-slide-up">
+    <div className="fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-sm border-t p-4 flex items-center gap-4 z-50 animate-slide-up" style={{ position: 'fixed' }}>
       <Button
         variant="ghost"
         size="icon"

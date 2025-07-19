@@ -112,7 +112,7 @@ const Fauna = () => {
     <div className="min-h-screen bg-[#E9DDC8]/10 overflow-hidden relative">
       <Header />
       
-      <main className="container mx-auto px-4 pt-20 pb-24">
+      <main className="container mx-auto px-4 pt-20 pb-32">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-3xl font-semibold text-gray-900 mb-8 text-center animate-fade-in">
             Fauna de Fortaleny
@@ -155,11 +155,11 @@ const Fauna = () => {
                     <Card key={animal.id} className="transition-all duration-200 hover:shadow-md">
                       <CardContent className="p-0">
                         <div className="flex flex-col sm:flex-row">
-                          <div className="w-full sm:w-32 h-32 sm:h-24 flex-shrink-0 p-3 sm:p-4">
+                          <div className="w-full sm:w-40 h-40 sm:h-32 flex-shrink-0 p-3 sm:p-4">
                             <img
                               src={animal.image}
                               alt={animal.title}
-                              className="w-full h-full object-cover rounded-lg"
+                              className="w-full h-full object-contain rounded-lg bg-gray-50"
                             />
                           </div>
                           <div className="flex-1 p-4 sm:p-6 sm:pl-2">
@@ -183,8 +183,7 @@ const Fauna = () => {
 
       <AudioPlayer 
         audioTitle="Guía de Fauna"
-        audioSrc="/fauna.m4a"
-      />
+        audioSrc={`${import.meta.env.BASE_URL}fauna.m4a`}/>
     </div>
   );
 };
