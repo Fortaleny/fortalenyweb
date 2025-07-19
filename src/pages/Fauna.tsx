@@ -76,15 +76,33 @@ const faunaData = {
     },
     {
       id: 3,
-      title: "XXXX",
-      description: "Habita cerca de fuentes y acequias, cazadora eficaz de mosquitos.",
-      image: "/fauna/fauna1.jpg"
+      title: "Carpa (Cyprinus carpio)",
+      description: "Si vas passejant per la vora del riu i escoltes un capbussó, saluda les nostres amigues les carpes. Aquest peix presenta un cos allargat, robust i comprimit lateralment, amb una coloració marró-verdosa i daurada, i amb grans escates. Les femelles, més grans que els mascles, poden arribar als 40 kg. Li encanten les aigües temperades, per això es troba molt a gust en aquesta zona. La seua alimentació és omnívora, i pot menjar cucs, insectes, crustacis, plantes i algues. Té una tècnica per aconseguir aliment que consisteix a remoure els sediments.",
+      image: "/fauna/Carpa.jpg"
     },
     {
       id: 4,
-      title: "XXX",
-      description: "Su característico canto nocturno forma parte de la banda sonora rural.",
-      image: "/fauna/fauna2.jpg"
+      title: "Barbus (Barbus barbus)",
+      description: "Rep el nom per les característiques barbes o bigots. És més complicat de veure que la resta de companys aquàtics, ja que li agraden les aigües mitjanes a profundes i viu en bancs. Habita aigües temperades i prefereix fons arenosos o pedregosos. És una espècie que hiberna formant petits grups sota les pedres o la vegetació. Té una tonalitat verd oliva amb reflexos daurats a la part superior i un ventre groguenc. La seua mida oscil·la entre els 30 i 120 cm, i és molt actiu i energètic. La seua alimentació és omnívora, encara que principalment herbívora.",
+      image: "/fauna/Barbo.jpg"
+    },
+    {
+      id: 5,
+      title: "Anguila (Anguilla anguilla)",
+      description: "Les anguiles tenen curiositats molt interessants. Per començar, són una espècie catàdroma, és a dir, viatgen a la mar per a reproduir-se i/o desovar, a grans profunditats. Viuen a la mar entre 3 i 7 anys, i després d’aquest període viatgen als rius adquirint la maduresa sexual. Arribat aquest moment poden tornar a la mar per a reproduir-se o patir hipertrofia i quedar-se als rius fins a edats molt avançades. És una espècie amb el cos molt allargat i cilíndric, presenta tonalitats diverses: negroses, verdes i groguenques. Té una única aleta contínua que comença prop del cap i una mandíbula inferior més prominent que la superior, amb dents fines. La seua alimentació és omnívora i també carronyera.",
+      image: "/fauna/Anguila.jpg"
+    },
+    {
+      id: 6,
+      title: "Black Bass (Micropterus dolomieu)",
+      description: "Originari de Nord-amèrica, és característic pel seu cap, que ocupa una tercera part del cos, i per la mandíbula inferior, més gran que la superior. Té un cos ovalat amb tonalitat verdosa i taques fosques. El seu cos creix al llarg de la seua vida, i pot arribar als 10 kg i 70 cm de longitud. No li agraden les aigües fredes i es troba en rius, grans llacs i xicotetes masses d’aigua. La seua alimentació es basa en caçar qualsevol animal en moviment (peixos, granotes, serps, cucs…), que succiona a gran velocitat. Entre els mesos d’abril i juny es produeix la posta: fan un niu d’aproximadament 1 m de diàmetre on la femella pon els ous. Poden arribar a fer diversos nius, cadascun vigilat per un mascle, que els defensa amb agressivitat davant qualsevol amenaça.",
+      image: "/fauna/Blackbass.jpg"
+    },
+    {
+      id: 7,
+      title: "Alburns (Alburnus alburnus)",
+      description: "Li agrada viure a la superfície de l’aigua, formant bancs de peixos. Té una mida menuda (13–15 cm), encara que de manera poc habitual pot arribar als 25 cm i 100 g de pes. Té una coloració platejada i brillant, amb llom blavós o verdós. El cos és allargat i estret; les femelles tenen un aspecte més robust per l’abdomen més arrodonit. Tenen la mandíbula prominent. Solen viure en aigües temperades, amb una mica de corrent, prop de la superfície, i es desplacen en bancs. És una espècie ovípara, amb postes de fins a 2.000 ous sobre substrats i amb una alta taxa de fecunditat. Té una alimentació omnívora i voraç, podent competir amb altres espècies i posar-les en perill.",
+      image: "/fauna/Alburno.jpg"
     }
   ]
 };
