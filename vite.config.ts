@@ -17,4 +17,6 @@ export default defineConfig(({ mode }) => ({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
-  }}));
+  },
+  base: '/fortalenyweb/' // Replace with your GitHub repo name
+}));
