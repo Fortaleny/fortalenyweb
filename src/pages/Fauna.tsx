@@ -183,7 +183,7 @@ const Fauna = () => {
 
       <AudioPlayer 
         audioTitle="Guía de Fauna"
-        audioSrc={`${import.meta.env.BASE_URL}fauna.m4a`}/>
+        audioSrc={`${import.meta.env.BASE_URL}FAUNA.mp3`}/>
     </div>
   );
 };
