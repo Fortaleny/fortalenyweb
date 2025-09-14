@@ -90,7 +90,7 @@ const Flora = () => {
 
       <AudioPlayer 
         audioTitle="Guía de Flora"
-        audioSrc={`${import.meta.env.BASE_URL}flor.m4a`}/>
+        audioSrc={`${import.meta.env.BASE_URL}FLORA.m4a`}/>
     </div>
   );
 };
