@@ -1,4 +1,3 @@
-
 import { Menu } from "lucide-react";
 import { Button } from "./ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
@@ -18,12 +17,19 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm z-50 border-b">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <h1 
-          className="text-xl font-semibold text-gray-900 cursor-pointer"
+        <div 
+          className="flex items-center gap-3 cursor-pointer"
           onClick={() => handleNavigation("/")}
         >
-          Ayuntamiento de Fortaleny
-        </h1>
+          <img 
+              src={`${import.meta.env.BASE_URL}aj-fortaleny.png`}
+            alt="Logo Ayuntamiento de Fortaleny" 
+            className="h-8 w-8 sm:h-10 sm:w-10 object-contain"
+          />
+          <h1 className="text-lg sm:text-xl font-semibold text-gray-900">
+            Ayuntamiento de Fortaleny
+          </h1>
+        </div>
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild>
             <Button variant="ghost" size="icon">

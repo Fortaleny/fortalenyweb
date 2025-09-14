@@ -20,13 +20,11 @@ const Index = () => {
           />
           
           <h1 className="text-3xl font-semibold text-gray-900 mb-4 animate-fade-in">
-            Bienvenidos a Fortaleny
+            Benvinguts i benvingudes a Fortaleny
           </h1>
           
           <p className="text-gray-700 leading-relaxed mb-8 animate-fade-in">
-            Descubre la rica biodiversidad de nuestro pueblo valenciano. Un lugar donde la naturaleza 
-            y la tradición se encuentran, creando un paisaje único en el corazón de la Comunidad Valenciana. 
-            Explora nuestra diversa flora y fauna local a través de esta guía interactiva.
+            Descobreix la rica biodiversitat del nostre poble valencià. Un lloc on la natura i la tradició es troben, creant un paisatge únic al cor de la Comunitat Valenciana. Explora la nostra diversa flora i fauna local a través d’aquesta guia interactiva.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in">
@@ -45,6 +43,13 @@ const Index = () => {
               Explorar Fauna
             </Button>
           </div>
+          <div className="mt-8 mb-8 animate-fade-in">
+            <img 
+              src={`${import.meta.env.BASE_URL}logo-turisme.jpg`}
+              alt="Paisaje de Fortaleny mostrando la biodiversidad local" 
+              className="w-full max-w-4xl mx-auto h-48 sm:h-64 md:h-72 object-cover rounded-lg shadow-lg"
+            />
+            </div>
         </div>
       </main>
     </div>
