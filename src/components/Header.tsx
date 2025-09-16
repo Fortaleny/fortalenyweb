@@ -27,7 +27,7 @@ const Header = () => {
             className="h-8 w-8 sm:h-10 sm:w-10 object-contain"
           />
           <h1 className="text-lg sm:text-xl font-semibold text-gray-900">
-            Ayuntamiento de Fortaleny
+            Ajuntament de Fortaleny
           </h1>
         </div>
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
