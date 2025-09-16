@@ -23,7 +23,7 @@ const Header = () => {
         >
           <img 
               src={`${import.meta.env.BASE_URL}aj-fortaleny.png`}
-            alt="Logo Ayuntamiento de Fortaleny" 
+            alt="Logo Ajuntament de Fortaleny" 
             className="h-8 w-8 sm:h-10 sm:w-10 object-contain"
           />
           <h1 className="text-lg sm:text-xl font-semibold text-gray-900">
